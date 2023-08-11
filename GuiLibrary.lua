@@ -1,4 +1,5 @@
 local GuiLibrary = {}
+function GuiLibrary:CreateLibrary()
     local Zylq = Instance.new("ScreenGui")
     local OpenBackground = Instance.new("Frame")
     local Zylq_2 = Instance.new("Folder")
@@ -785,3 +786,11 @@ function Api.CreateToggle(argstable)
     end
 end
 return GuiLibrary
+
+local button = GuiLibrary.CreateToggle({
+    Name = "hi",
+    Tab = movement,
+    Function = function(callback)
+        print("hi")
+    end
+})
